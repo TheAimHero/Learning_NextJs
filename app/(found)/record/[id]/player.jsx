@@ -10,7 +10,7 @@ function Loading() {
 
 export default function Player({ embed }) {
   return (
-    <div className='mx-auto h-[350px] w-[300px] p-5'>
+    <div className='mx-auto h-[350px] w-[300px] m-5'>
       <Suspense fallback={<Loading />}>{embed}</Suspense>
     </div>
   );
