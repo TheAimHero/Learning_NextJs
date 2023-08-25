@@ -13,7 +13,8 @@ export default function Followers() {
 
   return (
     <div className='ml-[15px] mt-[5px] sm:ml-[20px]'>
-      Follower Progrress: {followersCount ? followersCount : '?'}/100
+      Follower Progrress: {followersCount ? followersCount : '?'}/
+      {followersCount ? Math.pow(10, String(followersCount).length) : '?'}
     </div>
   );
 }
