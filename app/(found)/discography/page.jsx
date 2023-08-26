@@ -104,7 +104,7 @@ export default function Page() {
     return () => {
       clearTimeout(timer);
     };
-  }, [search]);
+  }, [search, deferredSearch]);
 
   return (
     <div className='min-h-screen'>
